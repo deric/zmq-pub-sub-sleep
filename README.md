@@ -2,6 +2,10 @@
 
 Code used for testing `keepalive` settings on DC/OS ([Jira ticket DCOS_OSS-1591](https://jira.mesosphere.com/browse/DCOS_OSS-1591)).
 
+By defining ENV variable `TCP_KEEPALIVE_IDLE=1000` on subscriber task you can experiment with `keepalive` (in seconds) for you OS.
+
+## Marathon tasks
+
 Publisher configuration:
 ```json
 {
